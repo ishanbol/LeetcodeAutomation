@@ -105,7 +105,7 @@ async function fetchSolution(topicID) {
 
     let cppCode = response.data.topic.post.content
     cppCode = extractCppCode(cppCode)
-    
+    cppCode.replace(/\\n/g, "");
     return cppCode
 }
 
@@ -157,7 +157,8 @@ async function main(){
     for (let index in communitySolutions) {
         let cppCode = await fetchSolution(communitySolutions[index].id)
         // submit the CPP CODE 
-        let submitStatus = await submitSolution(cppCode,questionID,titleSlug)
+        let remo = cppCode.replace(/\\n/g, "").replace(/\\/g, "")
+        let submitStatus = await submitSolution(remo,questionID,titleSlug)
         console.log(submitStatus)
     }
 
@@ -165,26 +166,5 @@ async function main(){
 
 main()
 
-
-// fetch(baseURL,{
-//     method: "POST",
-//     headers:{
-//         "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify()
-// }).then(response => {
-//     if (!response.ok) {
-//         throw new Error(`HTTP error! Status: ${response.status}`);
-//     }
-
-
-//     return response.json();
-// })
-// .then(data => {
-//     console.log('API Response:', data);
-// })
-// .catch(error => {
-//     console.error('API Error:', error);
-// });
 
 
