@@ -12,6 +12,7 @@
   "author": "Ishan Nandwal",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.0",
     "puppeteer": "^21.7.0"
   }
 }
