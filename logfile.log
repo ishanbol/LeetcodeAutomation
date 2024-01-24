@@ -1,0 +1,145 @@
+getDailyChallenge: {
+  acRate: 68.38648508251568,
+  difficulty: 'Medium',
+  freqBar: null,
+  frontendQuestionId: '1457',
+  isFavor: false,
+  paidOnly: false,
+  status: null,
+  title: 'Pseudo-Palindromic Paths in a Binary Tree',
+  titleSlug: 'pseudo-palindromic-paths-in-a-binary-tree',
+  hasVideoSolution: false,
+  hasSolution: true,
+  topicTags: [
+    {
+      name: 'Bit Manipulation',
+      id: 'VG9waWNUYWdOb2RlOjE5',
+      slug: 'bit-manipulation'
+    },
+    { name: 'Tree', id: 'VG9waWNUYWdOb2RlOjIw', slug: 'tree' },
+    {
+      name: 'Depth-First Search',
+      id: 'VG9waWNUYWdOb2RlOjIx',
+      slug: 'depth-first-search'
+    },
+    {
+      name: 'Breadth-First Search',
+      id: 'VG9waWNUYWdOb2RlOjIy',
+      slug: 'breadth-first-search'
+    },
+    {
+      name: 'Binary Tree',
+      id: 'VG9waWNUYWdOb2RlOjYxMDU3',
+      slug: 'binary-tree'
+    }
+  ]
+}
+pseudo-palindromic-paths-in-a-binary-tree
+{
+  data: {
+    question: {
+      questionId: '1568',
+      questionFrontendId: '1457',
+      title: 'Pseudo-Palindromic Paths in a Binary Tree',
+      titleSlug: 'pseudo-palindromic-paths-in-a-binary-tree',
+      isPaidOnly: false,
+      difficulty: 'Medium',
+      likes: 3076,
+      dislikes: 115,
+      categoryTitle: 'Algorithms'
+    }
+  }
+}
+1568
+[
+  {
+    id: 2573237,
+    title: '🔥 [LeetCode The Hard Way] 🔥 Explained Line By Line',
+    commentCount: 17,
+    topLevelCommentCount: 14,
+    viewCount: 6340,
+    pinned: false,
+    isFavorite: false,
+    solutionTags: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    post: {
+      id: 4177879,
+      status: null,
+      voteStatus: 0,
+      voteCount: 110,
+      creationDate: 1663122567,
+      isHidden: null,
+      author: [Object]
+    },
+    searchMeta: null
+  },
+  {
+    id: 4616403,
+    title: '✅☑Beats 99.02% Users || [C++/Java/Python/JavaScript] || 2 Approaches || EXPLAINED🔥',
+    commentCount: 10,
+    topLevelCommentCount: 10,
+    viewCount: 16131,
+    pinned: false,
+    isFavorite: false,
+    solutionTags: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    post: {
+      id: 6844722,
+      status: null,
+      voteStatus: 0,
+      voteCount: 76,
+      creationDate: 1706055145,
+      isHidden: null,
+      author: [Object]
+    },
+    searchMeta: null
+  },
+  {
+    id: 4616431,
+    title: 'DFS & bitset+parity check||Beats 100%',
+    commentCount: 14,
+    topLevelCommentCount: 12,
+    viewCount: 4260,
+    pinned: false,
+    isFavorite: false,
+    solutionTags: [ [Object], [Object], [Object], [Object], [Object] ],
+    post: {
+      id: 6844762,
+      status: null,
+      voteStatus: 0,
+      voteCount: 41,
+      creationDate: 1706056011,
+      isHidden: null,
+      author: [Object]
+    },
+    searchMeta: null
+  }
+]
+ERROR: SyntaxError: Unexpected token '<', "
+<!DOCTYPE "... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parseJSONFromBytes (node:internal/deps/undici/undici:5419:19)
+    at successSteps (node:internal/deps/undici/undici:5390:27)
+    at fullyReadBody (node:internal/deps/undici/undici:1501:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async specConsumeBody (node:internal/deps/undici/undici:5399:7)
+    at async submitSolution (/Users/ishannandwal/Desktop/projects/node/leetcode/FetchDailyChallenge.js:166:20)
+    at async main (/Users/ishannandwal/Desktop/projects/node/leetcode/FetchDailyChallenge.js:195:36)
+undefined
+/Users/ishannandwal/Desktop/projects/node/leetcode/FetchDailyChallenge.js:197
+                let submissionSuccess = await submissionStatus(submitStatus.submission_id)
+                                                                            ^
+
+TypeError: Cannot read properties of undefined (reading 'submission_id')
+    at main (/Users/ishannandwal/Desktop/projects/node/leetcode/FetchDailyChallenge.js:197:77)
+
+Node.js v21.6.0

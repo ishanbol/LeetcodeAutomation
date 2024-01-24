@@ -137,6 +137,9 @@ async function submissionStatus(submissionID){
 
     return response.data.submissionDetails.statusCode === 10
 }
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 async function getQuestionID(slug){
     let payload = getQuestionIdPayload
@@ -190,15 +193,17 @@ async function main(){
         if (finalCode) {
             // setTimeout(async () => {
                 let submitStatus = await submitSolution(finalCode,questionID,titleSlug)
+                await sleep(5000)
                 let submissionSuccess = await submissionStatus(submitStatus.submission_id)
                 if (submissionSuccess){
-                    sendTelegramNotification(`Today LeetCode Daily Challenge Submission Succes. ${submissionStatus.submission_id}`) 
+                    let message = "Today LeetCode Daily Challenge Submission Succes."+submitStatus.submission_id
+                    sendTelegramNotification(message) 
                     break
                 } 
             // }, 600);
         }       
     }
-    
+
 }
 
 main()
