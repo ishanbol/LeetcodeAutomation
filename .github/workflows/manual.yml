@@ -7,6 +7,10 @@ name: Manual workflow
 on:
   schedule:
     - cron: '05 13 * * *'  
+  
+  push:
+    branches:
+      - actionsManualAutomation
   # workflow_dispatch:
     # Inputs the workflow accepts.
     # inputs:
