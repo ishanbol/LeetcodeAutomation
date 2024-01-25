@@ -34,7 +34,7 @@ let FetchingSolutionsPayload  = {
       "topicTags": [],
       "questionSlug": "maximum-length-of-a-concatenated-string-with-unique-characters",
       "skip": 0,
-      "first": 3,
+      "first": 15,
       "orderBy": "most_votes"
     },
     "operationName": "communitySolutions"
