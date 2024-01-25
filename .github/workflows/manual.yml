@@ -11,7 +11,7 @@ on:
   push:
     branches:
       - actionsManualAutomation
-  # workflow_dispatch:
+    workflow_dispatch:
     # Inputs the workflow accepts.
     # inputs:
     #   name:
